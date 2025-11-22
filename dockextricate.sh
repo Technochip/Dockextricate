@@ -133,7 +133,7 @@ check_container_ports
 
 echo " "
 
-echo "=========== see if docker.sock  or any / directory is mounted from host ============="
+echo "=========== see if docker.sock  is mounted from host ============="
 
 if ls -la /var/run/docker.sock 1>/dev/null 2>&1; then
     echo "Docker socket found at /var/run/docker.sock"
