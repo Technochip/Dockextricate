@@ -1,0 +1,24 @@
+This script can only be used  after u confirm that ur in docker container as this script dont analyze it for you 
+
+This script runs and  analyse all the path for escalation 
+
+
+afetr u get  all capbs :
+
+u can analyze the caps using  
+
+like root can have :
+
+CapInh: 0000000000000000
+CapPrm: 00000000a80425fb
+CapEff: 00000000a80425fb
+CapBnd: 00000000a80425fb
+CapAmb: 0000000000000000
+
+
+we can get the caps  
+
+capsh --decode=0x00000000a80425fb
+0x00000000a80425fb=cap_chown,cap_dac_override,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_net_bind_service,cap_net_raw,cap_sys_chroot,cap_mknod,cap_audit_write,cap_setfcap
+
+
