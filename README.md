@@ -12,7 +12,7 @@ like this
 
 ![Running image](https://raw.githubusercontent.com/Technochip/Dockextricate/main/images/Running.png)
 
-and directly run it inside which will give you output like
+then do "chmod +x test.sh" and  directly run it inside which will give you output like
 
 ![Output image](https://raw.githubusercontent.com/Technochip/Dockextricate/main/images/output.png)
 
