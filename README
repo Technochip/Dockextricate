@@ -11,11 +11,11 @@ cat << 'EOF' > test.sh
 
 like this 
 
-![image](https://github.com/Technochip/Dockextricate/blob/83b000788e6fa584e4b1bd72d9813e54edd60eec/images/Running.png)
+![Running image](images/Running.png)
 
 and directly run it inside which will give you output like 
 
-![image](https://github.com/Technochip/Dockextricate/blob/83b000788e6fa584e4b1bd72d9813e54edd60eec/images/output.png)
+![Output image](images/output.png)
 
 It dosent download any extra packages instead it utilises all default utilites for images like ubuntu and alpine.
 
