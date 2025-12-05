@@ -1,0 +1,12 @@
+This docker file test for :
+
+Detecting OS type and version
+Checking if running as root user
+checking if the container is privileged
+Checking if 'sudo' command is available
+Checking current username & group...
+Checking for SUID/SGID files
+Checking for SUID/SGID files
+Checking for process running any programm  file  which can be accesable  to current user
+see if docker.sock  is mounted from host
+Detecting Mounted filesystems
