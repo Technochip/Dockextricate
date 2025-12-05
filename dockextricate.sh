@@ -45,7 +45,6 @@ else
 fi
 
 echo " "
-
 echo "================== Checking current username & group... ==================="
 user="$(whoami)"
 group="$(id -gn)"
@@ -61,12 +60,10 @@ else
 fi
 
 echo " "
-
 echo " =============== Checking for SUID/SGID files ====================="
 find / -type f \( -perm -4000 -o -perm -2000 \) -exec ls -ld {} \; 2>/dev/null 
 
 echo " "
-
 echo " ============== Checking for process running any programm  file  which can be accesable  to current user ===================="
 
 echo "User: $(id -un) (UID=$(id -u), GID=$(id -g))"
@@ -132,7 +129,6 @@ check_Gateway_connect
 check_container_ports
 
 echo " "
-
 echo "=========== see if docker.sock  is mounted from host ============="
 
 if ls -la /var/run/docker.sock 1>/dev/null 2>&1; then
