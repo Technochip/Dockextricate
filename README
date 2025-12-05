@@ -1,24 +1,31 @@
-This script can only be used  after u confirm that ur in docker container as this script dont analyze it for you 
-
-This script runs and  analyse all the path for escalation 
-
-
-afetr u get  all capbs :
-
-u can analyze the caps using  
-
-like root can have :
-
-CapInh: 0000000000000000
-CapPrm: 00000000a80425fb
-CapEff: 00000000a80425fb
-CapBnd: 00000000a80425fb
-CapAmb: 0000000000000000
+This is typical dockerscript only with 150 lines of code 
+If you are already shell inside an container u cna use it to look out for privilage escalation using this 
 
 
-we can get the caps  
+to copy and paste the script inside the container u can use this command directly :
 
-capsh --decode=0x00000000a80425fb
-0x00000000a80425fb=cap_chown,cap_dac_override,cap_fowner,cap_fsetid,cap_kill,cap_setgid,cap_setuid,cap_setpcap,cap_net_bind_service,cap_net_raw,cap_sys_chroot,cap_mknod,cap_audit_write,cap_setfcap
+cat << 'EOF' > test.sh 
+> 
+>
+>EOF
+
+like this 
+
+![image](images/Running.png)
+
+and directly run it inside which will give you output like 
+
+![image](image/output.png)
+
+It dosent download any extra packages instead it utilises all default utilites for images like ubuntu and alpine.
+
+It is not very detailed but the output can be useful for more investigation
+
+
+THIS IS ONLY A SIMPLE SCRIPT THAT CAN BE DIRECTLY COPY PASTED TO RUN DIRECTLY 
+
+``` DISCLAIMER: EDUCATIONAL PURPOSE ONLY !! ``
+
+
 
 
